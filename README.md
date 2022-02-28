@@ -42,13 +42,13 @@ It's usage is quite simple! Since is based on a TextView, you can simply add tre
 ```xml
 app:writerSpeed="fast or slow or normal" 
 ```
-This, taken a linear interpolator, is the time wait to each character to show up. 
+This, taken a linear interpolator, is the wait time to each character to show up. 
 
 - Change the animation interpolator (which is linear by default) 📈:
-The only condition is that the function representing the interpolator has to be *monotonic* (e.g. **Acelerate Interpolator**).
 ```kotlin
       findViewById<Typewriter>(R.id.typewriter).animationInterpolator = AccelerateInterpolator()
 ```
+The only condition is that the function that the interpolator represents has to be *monotonic* (e.g. **Acelerate Interpolator**).
 
 ## Next Steps ☑️
 
