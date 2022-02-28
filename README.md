@@ -62,3 +62,7 @@ The only condition is that the function that the interpolator represents has to 
 
 ## License 📖
 
+[MIT License](https://github.com/LisandroDiMeo/Typewriter/blob/main/LICENSE)
+
+<a title="User:ZyMOS, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:License_icon-mit.svg"><img width="256" alt="License icon-mit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/License_icon-mit.svg/256px-License_icon-mit.svg.png"></a>
+
