@@ -36,18 +36,21 @@ It's usage is quite simple! Since is based on a TextView, you can simply add tre
   findViewById<Typewriter>(R.id.typewriter).startTypewriter() // To Start Typewriter animation. 
 ```
 
-### Configuration
+### Configuration 🔧
 
-- To change the speed of the text:
+- Change the speed of the text 🏃:
 ```xml
 app:writerSpeed="fast or slow or normal" 
 ```
 This, taken a linear interpolator, is the time wait to each character to show up. 
 
-- Also, you can change the interpolator (which is linear by default). The only condition is that the function representing 
-the interpolator has to be *monotonic* (e.g. **Acelerate Interpolator**).
+- Change the animation interpolator (which is linear by default) 📈:
+The only condition is that the function representing the interpolator has to be *monotonic* (e.g. **Acelerate Interpolator**).
+```kotlin
+      findViewById<Typewriter>(R.id.typewriter).animationInterpolator = AccelerateInterpolator()
+```
 
-## Next Steps
+## Next Steps ☑️
 
 - [x] Make a simple typewriter component.
 - [ ] Render a list of strings in one typewriter component sequentially (in delete and write fashion).
@@ -57,5 +60,5 @@ the interpolator has to be *monotonic* (e.g. **Acelerate Interpolator**).
 - [ ] Add cooler use case of Typewriter component.
 - [ ] Add Compose Compatibility. 
 
-## License 
+## License 📖
 
