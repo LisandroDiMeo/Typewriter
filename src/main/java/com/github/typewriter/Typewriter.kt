@@ -1,12 +1,13 @@
-package com.example.typewriter
+package com.github.typewriter
 
 import android.animation.ValueAnimator
 import android.content.Context
 import android.util.AttributeSet
 import android.view.animation.*
 import androidx.appcompat.widget.AppCompatTextView
-import com.example.typewriter.utils.WriterSpeed
-import com.example.typewriter.utils.determineDuration
+import com.example.typewriter.R
+import com.github.typewriter.utils.WriterSpeed
+import com.github.typewriter.utils.determineDuration
 
 class Typewriter @JvmOverloads
 constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr : Int = 0) : AppCompatTextView(context, attributeSet, defStyleAttr){
@@ -16,7 +17,8 @@ constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr :
     init {
         val textViewContent = this.text
         this.text = EMPTY_STRING
-        val typedArray = context.obtainStyledAttributes(attributeSet, R.styleable.Typewriter, defStyleAttr, 0)
+        val typedArray = context.obtainStyledAttributes(attributeSet,
+            R.styleable.Typewriter, defStyleAttr, 0)
         val writerSpeed : WriterSpeed = WriterSpeed.values()[typedArray.getInt(R.styleable.Typewriter_writerSpeed, 0)]
         animator = ValueAnimator.ofInt(0, textViewContent.length - 1).apply {
             var index = -1

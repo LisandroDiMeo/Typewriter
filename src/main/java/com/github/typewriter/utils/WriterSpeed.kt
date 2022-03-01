@@ -1,4 +1,4 @@
-package com.example.typewriter.utils
+package com.github.typewriter.utils
 
 enum class WriterSpeed {SLOW, NORMAL, FAST}
 
