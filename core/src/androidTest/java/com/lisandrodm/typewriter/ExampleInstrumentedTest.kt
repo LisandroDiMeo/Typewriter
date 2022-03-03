@@ -1,4 +1,4 @@
-package com.example.typewriter
+package com.lisandrodm.typewriter
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

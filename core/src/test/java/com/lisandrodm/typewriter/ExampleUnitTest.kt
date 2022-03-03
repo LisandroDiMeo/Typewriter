@@ -1,4 +1,4 @@
-package com.example.typewriter
+package com.lisandrodm.typewriter
 
 import org.junit.Test
 
