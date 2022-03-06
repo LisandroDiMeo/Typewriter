@@ -1,12 +1,12 @@
-package com.example.typewriter
+package com.lisandrodm.typewriter
 
 import android.animation.ValueAnimator
 import android.content.Context
 import android.util.AttributeSet
 import android.view.animation.*
 import androidx.appcompat.widget.AppCompatTextView
-import com.example.typewriter.utils.WriterSpeed
-import com.example.typewriter.utils.determineDuration
+import com.lisandrodm.typewriter.utils.WriterSpeed
+import com.lisandrodm.typewriter.utils.determineDuration
 
 class Typewriter @JvmOverloads
 constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr : Int = 0) : AppCompatTextView(context, attributeSet, defStyleAttr){

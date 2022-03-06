@@ -1,4 +1,4 @@
-package com.example.typewriter.utils
+package com.lisandrodm.typewriter.utils
 
 enum class WriterSpeed {SLOW, NORMAL, FAST}
 
